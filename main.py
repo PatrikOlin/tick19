@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 import sys
 sys.path.insert(1, "./lib")
 
@@ -15,8 +16,7 @@ response = requests.get(API_URL)
 country = 'Sweden'
 country_data = response.json()[country] 
 df = pd.DataFrame(response.json()[country]) 
-dead = '(☓__☓)'
-
+dead = '(x__x)'
 
 # df.plot(x='date', color='#000000', style=[':','--','-','s:']).get_figure().savefig('graph.png')
                     
